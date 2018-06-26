@@ -8,9 +8,7 @@
 	<link rel="stylesheet" href="lead.css">
 	<script type="text/javascript" src="furnace.min.js"></script>
 	
-		<script src="jquery.min.js"></script>
-
-  	<script src="jquery.js"></script>
+	
 	
 	
 </head>
@@ -28,8 +26,7 @@
 						<a href="index.html"><img src="CASALOGO-white-i.svg" width="256"></a>
 					</div>
 					<div class="user">
-						<div class="au-body au-body--dark">
-						   <a class="au-btn au-btn--dark" href="signed-out.html">Sign out</a></div>
+					
 					</div>
 			  
 			  
@@ -42,48 +39,50 @@
 		<div class="container">
 			
 			<div class="col-xs-6">
+				<br />
+				<div role="alert" class="au-body au-page-alerts au-page-alerts--warning">
+  <h3>There was a problem signing in</h3>
+					
+					<p>Please check your username and password.</p>
+					
+					<p>Note: if you have previously registered for other CASA systems you will need to <a href="create.html">create a new account</a> to log into MyCASA.</p>
+					
+</div>
 				
-			<br />	
 				
-			<div role="alert" class="au-body au-page-alerts au-page-alerts--success">
-  <h3>Proof of identity update saved</h3>
-				<p>Your proof of identity update details have been saved successfully.
-<a class="au-direction-link" href="arn0.html">
-  Continue application
-					</a></p>
-</div>	
-				
-			
 			<header class="au-header" role="banner">
 				<h1 class="au-header-heading">Welcome to myCASA</h1>
-				
-				<div><strong>Bob Furzer</strong></div>
-				
+				<span class="au-header-subline">Sign in or create an account to access CASA services online</span>
 			</header>
 
+			<form>
 				
 				
-				<h3>Applications in progress</h3>
+				<label for="text-input-block">Email address</label>
+				<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="text" value="">
 				
-				<p><strong><a href="arn0.html">Proof of identity update</a></strong> (last edited on 3 March 2018)<br />
-				Status: not submitted<br />
-				<a href="#" class="cancel">Cancel application</a>
-				</p>
-					
+				<br />
 				
-				<br /><br />
-				
-				
-				
-							
-				<a class="au-cta-link" href="personal.html">Profile details</a>
-				<p>Manage your personal information</p>
-				
-				<br /><br />
+				<label for="text-input-block">Password</label>
+				<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="password" value="">
 				
 				
 				
+				<br />
 				
+				<a class="au-btn" href="password-reset-existing.html">Sign in</a>
+				
+			</form>
+				
+			<p><a href="recovery1.html">Problems signing in?</a></p>	
+				
+			<h2>Not registered?</h2>
+				
+			<br />
+				
+			<form>
+				<a class="au-btn au-btn--secondary" href="create.html">Create account</a>
+			</form>	
 			
 				
 			</div>
